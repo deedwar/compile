@@ -6,4 +6,4 @@
 #ZIMAGE := ~/github/kernel/evolve-1.8/arch/arm/boot/zImage
 
 rm ./boot.img
-python ./tools/mkelf.py -o ./boot.img ~/github/kernel/evolve-1.14/arch/arm/boot/zImage@0x40208000 ./tools/combinedroot-1.14.fs@0x41500000,ramdisk ./tools/RPM.bin@0x20000,rpm
+python ./tools/mkelf.py -o ./boot.img ~/github/kernel/evolve-1x/arch/arm/boot/zImage@0x40208000 ./tools/combinedroot.fs@0x41500000,ramdisk ./tools/RPM.bin@0x20000,rpm
